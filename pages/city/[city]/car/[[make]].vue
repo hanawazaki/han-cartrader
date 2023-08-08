@@ -1,5 +1,5 @@
 <template>
-  <CarCard />
+  <CarCards />
 </template>
 
 <script setup></script>

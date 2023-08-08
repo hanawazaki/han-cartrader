@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <!-- card -->
-    <Card />
+    <CarCard v-for="car in cars" :key="car.id" :car="car" />
     <!-- card -->
     <!-- card -->
     <!-- <div
@@ -50,6 +50,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { cars } = useCars();
+</script>
 
 <style lang="scss" scoped></style>
